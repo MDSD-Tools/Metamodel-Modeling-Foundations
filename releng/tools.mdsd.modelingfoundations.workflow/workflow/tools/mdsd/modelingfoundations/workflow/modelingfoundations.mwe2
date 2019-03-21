@@ -1,0 +1,38 @@
+module tools.mdsd.modelingfoundations.workflow.modelingfoundations
+
+import org.eclipse.emf.mwe2.ecore.EcoreGenerator
+import tools.mdsd.ecoreworkflow.mwe2lib.bean.EclipseRCPSupportingStandaloneSetup
+import tools.mdsd.ecoreworkflow.mwe2lib.component.ContextDependentMapping
+import tools.mdsd.ecoreworkflow.mwe2lib.component.URISupportingDirectoryCleaner
+import tools.mdsd.ecoreworkflow.mwe2lib.component.GapPatternPostProcessor
+
+var workspaceRoot = "../../"
+
+Workflow {
+	bean = EclipseRCPSupportingStandaloneSetup {
+		scanClassPath = true
+		platformUri = workspaceRoot
+	}
+
+	component = URISupportingDirectoryCleaner {
+		directory = "platform:/resource/tools.mdsd.modelingfoundations.identifier/src-gen"
+		directory = "platform:/resource/tools.mdsd.modelingfoundations.identifier.edit/src-gen"
+	}
+
+	component = EcoreGenerator {
+		generateCustomClasses = false
+		generateEdit = true
+		genModel = "platform:/resource/tools.mdsd.modelingfoundations.identifier/model/identifier.genmodel"
+		srcPath = "platform:/resource/tools.mdsd.modelingfoundations.identifier/src-gen"
+		srcPath = "platform:/resource/tools.mdsd.modelingfoundations.identifier/src"
+		srcPath = "platform:/resource/tools.mdsd.modelingfoundations.identifier.edit/src-gen"
+		srcPath = "platform:/resource/tools.mdsd.modelingfoundations.identifier.edit/src"
+	}
+	
+	component = GapPatternPostProcessor {
+		folders = {
+			gen = "platform:/resource/tools.mdsd.modelingfoundations.identifier/src-gen"
+			src = "platform:/resource/tools.mdsd.modelingfoundations.identifier/src"
+		}
+	}	
+}
