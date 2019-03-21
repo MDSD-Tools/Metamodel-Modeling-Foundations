@@ -1,4 +1,4 @@
-module tools.mdsd.modelingfoundations.workflow.modelingfoundations
+module generate
 
 import org.eclipse.emf.mwe2.ecore.EcoreGenerator
 import tools.mdsd.ecoreworkflow.mwe2lib.bean.EclipseRCPSupportingStandaloneSetup
@@ -12,11 +12,6 @@ Workflow {
 	bean = EclipseRCPSupportingStandaloneSetup {
 		scanClassPath = true
 		platformUri = workspaceRoot
-	}
-
-	component = URISupportingDirectoryCleaner {
-		directory = "platform:/resource/tools.mdsd.modelingfoundations.identifier/src-gen"
-		directory = "platform:/resource/tools.mdsd.modelingfoundations.identifier.edit/src-gen"
 	}
 
 	component = EcoreGenerator {
