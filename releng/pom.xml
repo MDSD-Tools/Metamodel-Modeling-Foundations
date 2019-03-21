@@ -12,6 +12,7 @@
 	
 	<modules>
 		<module>tools.mdsd.modelingfoundations.updatesite</module>
+		<module>tools.mdsd.modelingfoundations.workflow</module>
 	</modules>
 	
 </project>
