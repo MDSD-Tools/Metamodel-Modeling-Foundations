@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>tools.mdsd</groupId>
 		<artifactId>eclipse-parent-updatesite</artifactId>
-		<version>0.1.1</version>
+		<version>0.1.2</version>
 	</parent>
 	<groupId>tools.mdsd.modelingfoundations</groupId>
 	<artifactId>parent</artifactId>	
@@ -23,84 +23,5 @@
 		<module>tests</module>
 		<module>releng</module>
 	</modules>
-
-	<profiles>
-		<profile>
-			<id>execute-generate-workflow</id>
-			<activation>
-				<file>
-					<exists>workflow/generate.mwe2</exists>
-				</file>
-			</activation>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>exec-maven-plugin</artifactId>
-						<version>1.4.0</version>
-						<executions>
-							<execution>
-								<id>mwe2LauncherGenerate</id>
-								<phase>generate-sources</phase>
-								<goals>
-									<goal>java</goal>
-								</goals>
-								<configuration>
-									<mainClass>org.eclipse.emf.mwe2.launch.runtime.Mwe2Launcher</mainClass>
-									<arguments>
-										<argument>/${project.basedir}/workflow/generate.mwe2</argument>
-										<argument>-p</argument>
-										<argument>workspaceRoot=/${maven.multiModuleProjectDirectory}</argument>
-									</arguments>
-									<classpathScope>compile</classpathScope>
-									<includePluginDependencies>true</includePluginDependencies>
-									<cleanupDaemonThreads>false
-									</cleanupDaemonThreads><!-- see https://bugs.eclipse.org/bugs/show_bug.cgi?id=475098#c3 -->
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>execute-clean-workflow</id>
-			<activation>
-				<file>
-					<exists>workflow/clean.mwe2</exists>
-				</file>
-			</activation>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>exec-maven-plugin</artifactId>
-						<version>1.4.0</version>
-						<executions>
-							<execution>
-								<id>mwe2LauncherClean</id>
-								<phase>clean</phase>
-								<goals>
-									<goal>java</goal>
-								</goals>
-								<configuration>
-									<mainClass>org.eclipse.emf.mwe2.launch.runtime.Mwe2Launcher</mainClass>
-									<arguments>
-										<argument>/${project.basedir}/workflow/clean.mwe2</argument>
-										<argument>-p</argument>
-										<argument>workspaceRoot=/${maven.multiModuleProjectDirectory}</argument>
-									</arguments>
-									<classpathScope>compile</classpathScope>
-									<includePluginDependencies>true</includePluginDependencies>
-									<cleanupDaemonThreads>false
-									</cleanupDaemonThreads><!-- see https://bugs.eclipse.org/bugs/show_bug.cgi?id=475098#c3 -->
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
 	
 </project>
