@@ -4,7 +4,7 @@
     modelDirectory="/tools.mdsd.modelingfoundations.identifier/src-gen"
     creationIcons="false" editDirectory="/tools.mdsd.modelingfoundations.identifier.edit/src-gen"
     editorDirectory="/tools.mdsd.modelingfoundations.identifier.editor/src-gen" modelPluginID="tools.mdsd.modelingfoundations.identifier"
-    modelName="Model" rootExtendsInterface="org.eclipse.emf.cdo.CDOObject" rootExtendsClass="org.eclipse.emf.internal.cdo.CDOObjectImpl"
+    modelName="Model" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" featureDelegation="Dynamic"
     complianceLevel="10.0" copyrightFields="false" editPluginID="tools.mdsd.modelingfoundations.identifier.edit"
     editorPluginID="tools.mdsd.modelingfoundations.identifier.editor" operationReflection="true"
@@ -15,7 +15,6 @@
       extensibleProviderFactory="true" childCreationExtenders="true" ecorePackage="identifier.ecore#/">
     <genClasses image="false" ecoreClass="identifier.ecore#//Identifier">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute identifier.ecore#//Identifier/id"/>
-      <genOperations ecoreOperation="identifier.ecore#//Identifier/generateUUID" body="return org.eclipse.emf.ecore.util.EcoreUtil.generateUUID();"/>
     </genClasses>
     <genClasses image="false" ecoreClass="identifier.ecore#//NamedElement">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute identifier.ecore#//NamedElement/entityName"/>
