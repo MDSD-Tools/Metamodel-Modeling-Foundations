@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" label="Modeling Foundations Aggregation" buildRoot="../m2" packedStrategy="SKIP" type="R" mavenResult="true" versionFormat="MavenSnapshot">
+  <validationSets label="Main">
+    <contributions label="Modeling Foundations">
+      <repositories location="${maven.multiModuleProjectDirectory}/releng/tools.mdsd.modelingfoundations.updatesite/target/repository">
+        <bundles name="tools.mdsd.modelingfoundations.identifier"/>
+        <bundles name="tools.mdsd.modelingfoundations.identifier.edit"/>
+      </repositories>
+      <mavenMappings namePattern="org.eclipse.core.(.*)" groupId="org.eclipse.platform" artifactId="org.eclipse.core.$1"/>
+      <mavenMappings namePattern="tools.mdsd.(.*)" groupId="tools.mdsd" artifactId="tools.mdsd.$1"/>
+    </contributions>
+    <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.16/"/>
+    <validationRepositories location="https://download.eclipse.org/modeling/emf/emf/builds/release/2.22"/>
+  </validationSets>
+  <configurations architecture="x86_64"/>
+</aggregator:Aggregation>
