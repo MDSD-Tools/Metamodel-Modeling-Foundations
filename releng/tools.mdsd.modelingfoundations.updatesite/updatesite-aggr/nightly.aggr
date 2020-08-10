@@ -4,7 +4,9 @@
     <contributions label="Modeling Foundations">
       <repositories location="${maven.multiModuleProjectDirectory}/releng/tools.mdsd.modelingfoundations.updatesite/target/repository">
         <bundles name="tools.mdsd.modelingfoundations.identifier"/>
+        <bundles name="tools.mdsd.modelingfoundations.identifier.source"/>
         <bundles name="tools.mdsd.modelingfoundations.identifier.edit"/>
+        <bundles name="tools.mdsd.modelingfoundations.identifier.edit.source"/>
       </repositories>
       <mavenMappings namePattern="org.eclipse.core.(.*)" groupId="org.eclipse.platform" artifactId="org.eclipse.core.$1"/>
       <mavenMappings namePattern="tools.mdsd.(.*)" groupId="tools.mdsd" artifactId="tools.mdsd.$1"/>

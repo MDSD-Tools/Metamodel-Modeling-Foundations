@@ -3,7 +3,13 @@
    <feature url="features/tools.mdsd.modelingfoundations.identifier.feature_1.0.0.qualifier.jar" id="tools.mdsd.modelingfoundations.identifier.feature" version="1.0.0.qualifier">
       <category name="modelingfoundations"/>
    </feature>
+   <feature url="features/tools.mdsd.modelingfoundations.identifier.feature.source_1.0.0.qualifier.jar" id="tools.mdsd.modelingfoundations.identifier.feature.source" version="1.0.0.qualifier">
+      <category name="modelingfoundations"/>
+   </feature>
    <feature url="features/tools.mdsd.modelingfoundations.identifier.ui.feature_1.0.0.qualifier.jar" id="tools.mdsd.modelingfoundations.identifier.ui.feature" version="1.0.0.qualifier">
+      <category name="modelingfoundations"/>
+   </feature>
+   <feature url="features/tools.mdsd.modelingfoundations.identifier.ui.feature.source_1.0.0.qualifier.jar" id="tools.mdsd.modelingfoundations.identifier.ui.feature.source" version="1.0.0.qualifier">
       <category name="modelingfoundations"/>
    </feature>
    <category-def name="modelingfoundations" label="MDSD.tools Modeling Foundations"/>

@@ -1,26 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-		
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>tools.mdsd</groupId>
 		<artifactId>eclipse-parent-updatesite</artifactId>
-		<version>0.5.2</version>
+		<version>0.5.3</version>
 	</parent>
 	<groupId>tools.mdsd.modelingfoundations</groupId>
-	<artifactId>parent</artifactId>	
+	<artifactId>parent</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	
+
+	<name>MDSD.tools Modeling Foundations</name>
+	<description>A shared library of common EMF modeling concepts</description>
+	<url>https://mdsd.tools</url>
+
+	<licenses>
+		<license>
+			<name>Eclipse Public License, Version 2.0</name>
+			<url>https://raw.githubusercontent.com/MDSD-Tools/Metamodel-Modeling-Foundations/master/LICENSE</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Sebastian Krach</name>
+			<email>krach@fzi.de</email>
+			<organization>FZI Forschungszentrum Informatik, Germany</organization>
+			<organizationUrl>http://www.fzi.de</organizationUrl>
+		</developer>
+		<developer>
+			<name>Stephan Seifermann</name>
+			<email>stephan.seifermann@kit.edu</email>
+			<organization>Karlsruhe Institute of Technology (KIT), Germany</organization>
+			<organizationUrl>http://kit.edu</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/mdsd-tools/metamodel-modeling-foundations.git</connection>
+		<developerConnection>scm:git:ssh://github.com/mdsd-tools/metamodel-modeling-foundations.git</developerConnection>
+		<url>http://github.com/mdsd-tools/metamodel-modeling-foundations/tree/master</url>
+	</scm>
+
 	<properties>
 		<org.palladiosimulator.maven.tychotprefresh.tplocation.1>${project.basedir}/releng/tools.mdsd.modelingfoundations.targetplatform/tp.target</org.palladiosimulator.maven.tychotprefresh.tplocation.1>
 	</properties>
-	
+
 	<modules>
 		<module>bundles</module>
 		<module>features</module>
 		<module>releng</module>
 	</modules>
-	
+
 </project>
