@@ -6,11 +6,11 @@
 	<parent>
 		<groupId>tools.mdsd</groupId>
 		<artifactId>eclipse-parent-updatesite</artifactId>
-		<version>0.4.4</version>
+		<version>0.5.5</version>
 	</parent>
 	<groupId>tools.mdsd.modelingfoundations</groupId>
-	<artifactId>parent</artifactId>	
-	<version>0.1.0-SNAPSHOT</version>
+	<artifactId>parent</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	
 	<properties>
