@@ -4,13 +4,14 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   Metamodel-Modeling-Foundations:
-    uses:  PalladioSimulator/Palladio-Build-ActionsPipeline/.github/workflows/build.yml@v3.2
+    uses: PalladioSimulator/Palladio-Build-ActionsPipeline/.github/workflows/build.yml@v3.2
     with:
       use-display-output: true
       no-caching: true
       java-version: 17
       runner-label: ubuntu-latest
       deploy-updatesite: 'releng/tools.mdsd.modelingfoundations.updatesite/target/repository'
+      skip-branch-deploy: false
     secrets:
       SERVER_SSH_KEY: ${{ secrets.DEPLOYMENT_SERVER_SSH_KEY }}
       REMOTE_HOST: ${{ secrets.DEPLOYMENT_REMOTE_HOST }}
