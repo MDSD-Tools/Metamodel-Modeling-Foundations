@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: tools.mdsd.modelingfoundations.identifier.edit;singleton:=true
 Automatic-Module-Name: tools.mdsd.modelingfoundations.identifier.edit
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.0.0
 Bundle-ClassPath: .
 Bundle-Activator: tools.mdsd.modelingfoundations.identifier.provider.ModelEditPlugin$Implementation
 Bundle-Vendor: %providerName

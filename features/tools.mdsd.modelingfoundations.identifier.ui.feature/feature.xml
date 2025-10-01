@@ -2,7 +2,7 @@
 <feature
       id="tools.mdsd.modelingfoundations.identifier.ui.feature"
       label="MDSD.tools Modeling Foundation Identifier UI Support Feature"
-      version="1.0.0.qualifier"
+      version="1.0.0"
       license-feature="tools.mdsd.license.epl2"
       license-feature-version="1.0.0">
 
@@ -12,7 +12,7 @@
 
 
    <requires>
-      <import feature="tools.mdsd.modelingfoundations.identifier.feature" version="1.0.0.qualifier"/>
+      <import feature="tools.mdsd.modelingfoundations.identifier.feature" version="1.0.0"/>
    </requires>
 
    <plugin

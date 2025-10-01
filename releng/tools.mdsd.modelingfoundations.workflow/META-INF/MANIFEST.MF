@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Modeling Foundation Ecore Workflow
 Bundle-SymbolicName: tools.mdsd.modelingfoundations.workflow
-Bundle-Version: 0.1.0.qualifier
+Bundle-Version: 1.0.0
 Automatic-Module-Name: tools.mdsd.modelingfoundations.workflow
 Require-Bundle: org.eclipse.emf.mwe.core,
  org.eclipse.emf.mwe2.launch,
