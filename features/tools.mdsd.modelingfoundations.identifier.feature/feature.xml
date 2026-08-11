@@ -2,9 +2,9 @@
 <feature
       id="tools.mdsd.modelingfoundations.identifier.feature"
       label="MDSD.tools Modeling Foundations Identifier Feature"
-      version="1.1.0"
+      version="1.2.0"
       license-feature="tools.mdsd.license.epl2"
-      license-feature-version="1.1.0">
+      license-feature-version="1.2.0">
 
    <description url="https://github.com/MDSD-Tools/Metamodel-Modeling-Foundations">
       Foundational classes and concepts for Model-driven Software Engineering.
